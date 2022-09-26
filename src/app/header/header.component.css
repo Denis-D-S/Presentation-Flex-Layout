@@ -1,0 +1,7 @@
+/* HEADER */
+.menuDiv{background-color: aqua; color: black; height: 50px;}
+.space{padding-top: 8px;}
+.letrasSpan{color: black;}
+
+/* este cara mostra a div que separa o header (é só mudar a cor)  */
+/* .bRed{border: 1px solid red;}  */

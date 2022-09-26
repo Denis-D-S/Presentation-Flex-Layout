@@ -1,0 +1,39 @@
+<div fxLayout = "row wrap" fxLayoutAlign="center center">
+
+  <!-- HEADER -->
+  <div class="menuDiv" fxFlex="70%" fxFlex.sm="100%" fxFlex.xs="100%" fxLayoutAlign="start center">  <!-- e esta div serve para controlar o tamanho/comprimento/cor do elemento -->
+
+        <!-- CANTO ESQUERDO DO HEADER -->
+        <div fxLayoutGap="10px"  fxLayoutAlign="start center">   <!-- e esta div vai controlar as letras da mensagem + o desenho/ícone do folder. O "fxLayoutGap="10px"" serve para criar um distanciamento de 10px entre as divs filhas deste elemento-->
+          <mat-icon>folder</mat-icon> <!-- este é o comando do Angular Material que nos permite criar um ícone de um folder em nosso template -->
+          <span class="letrasSpan">Flex-Layout Presentation</span>
+        </div>
+
+        <!-- CENTRO DO HEADER -->
+        <div class="bRed" fxFlex="65%" ></div> <!-- esta div é uma "gambiarra" para criar um espaçamento (usando fxFlex), jogando assim as divs que vem depois para o canto direito -->
+        <!-- botei uma barra colorida nessa classe "bRed" para que a gente consiga observar a extensão da div -->
+
+        <!-- CANTO DIREITO DO HEADER-->
+          <div fxLayoutGap="5px"  fxFlex="1 1 15%" fxLayoutAlign="start center" fxShow fxHide.xs>
+            <div>|Text 1| </div>
+            <div>|Text 2| </div>
+            <div>|Text 3| </div>
+          </div>
+
+          <!-- CANTO DIREITO DO HEADER (botão menu que desaparece) -->
+          <div fxHide fxShow.xs> <!-- fxHide = esconde a div... fxShow.xs = mostra a div quando for "extra small" -->
+            <button mat-button [matMenuTriggerFor]="menu">
+              <mat-icon>menu</mat-icon> <!-- este icone é aqueles 3 tracinhos (apenas um ícone bonitinho pro botão) -->
+            </button>
+            <mat-menu #menu="matMenu">
+              <button mat-menu-item>|Text 1|</button>
+              <button mat-menu-item>|Text 2|</button>
+              <button mat-menu-item>|Text 3|</button>
+            </mat-menu>
+          </div>
+      </div>
+
+      <!-- ESPAÇO SEPARANDO O HEADER E A DIV ABAIXO -->
+      <div class="space" fxFlex="100%"></div>   <!-- isso cria uma pequena separação entre a o header e a div embaixo do header' -->
+
+</div>
