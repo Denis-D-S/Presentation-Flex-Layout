@@ -4,13 +4,27 @@
 <div class="fourthDiv" fxFlex="70%" fxFlex.sm="100%" fxFlex.xs="100%" fxLayout="row wrap">
 
   <div class="bigDiv" fxFlex="80%" fxFlex.sm="100%" fxFlex.xs="100%">
-    <div class="divG" fxFlex="100%" fxFlex.sm="100%" fxFlex.xs="100%" fxLayoutAlign="center center">G</div>
+    <!-- DIV DA IMAGEM GRANDE: -->
+    <div class="divG1" fxFlex="100%" fxFlex.sm="100%" fxFlex.xs="100%" fxLayoutAlign="center center" fxShow fxHide.sm fxHide.xs>G</div>
   </div>
 
+  <!-- DIV DA IMAGEM PEQUENA:  -->
+  <div fxFlex="80%" fxFlex.sm="100%" fxFlex.xs="100%" fxShow.sm fxHide fxHide.xs>
+    <div class="divG2" fxFlex="100%" fxFlex.sm="100%" fxFlex.xs="100%" fxLayoutAlign="center center">G</div>
+  </div>
+
+
+
+  <!-- DIV DA IMAGEM EXTRA PEQUENA:  -->
+  <div fxFlex="80%" fxFlex.sm="100%" fxFlex.xs="100%" fxShow.xs fxHide.sm fxHide>
+    <div class="divG3" fxFlex="100%" fxFlex.sm="100%" fxFlex.xs="100%" fxLayoutAlign="center center">G</div>
+  </div>
+
+  <!-- DIVS DA DIREITA DA TELA -->
   <div class="rightDiv" fxFlex="20%" fxFlex.sm="100%" fxFlex.xs="100%" fxLayout="row wrap">
     <!-- PULO DO GATO AQUI: como estas divs estão Flex "100%", elas vão consumir todas um tamanho "X" pré-estabelecido pelo flex-layout,
-      e por isso elas vão ficar empilhadinhas 1 sobre a outra dentro do espaço de "20%" da div pai. Dessa forma elas vão formar um bloco maior
-      que as outras DIVs. E por isso o bloco "G", que também deve cobrir 100%, vai ficar tão grande... -->
+    e por isso elas vão ficar empilhadinhas 1 sobre a outra dentro do espaço de "20%" da div pai. Dessa forma elas vão formar um bloco maior
+    que as outras DIVs. E por isso o bloco "G", que também deve cobrir 100%, vai ficar tão grande... -->
     <div class="divH" fxFlex="100%" fxFlex.sm="33%" fxFlex.xs="33%" fxLayoutAlign="center center">H</div>
     <div class="divI" fxFlex="100%" fxFlex.sm="33%" fxFlex.xs="33%" fxLayoutAlign="center center">I</div>
     <div class="divJ" fxFlex="100%" fxFlex.sm="34%" fxFlex.xs="34%" fxLayoutAlign="center center">J</div>
