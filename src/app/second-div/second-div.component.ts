@@ -1,15 +1,10 @@
-import { Component, OnInit } from '@angular/core';
+import {Component} from '@angular/core';
 
 @Component({
   selector: 'app-second-div',
   templateUrl: './second-div.component.html',
   styleUrls: ['./second-div.component.css']
 })
-export class SecondDivComponent implements OnInit {
-
-  constructor() { }
-
-  ngOnInit(): void {
-  }
+export class SecondDivComponent {
 
 }
